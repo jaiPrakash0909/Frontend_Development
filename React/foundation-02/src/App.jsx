@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
 
 const shows = [
@@ -25,13 +22,25 @@ const shows = [
   },
 ];
 
+// fetch -> API -> Data -> variable
+
 function App() {
 
   return (
     <>
     <div>
-      <h1>Hello {shows[0].title} from project</h1>
-      <h1>Hello from project</h1>
+      <h1>Hello</h1>
+      <section className='grid'>
+        {
+          shows.map((show)=>(
+            <article>
+              <p className="tag">{show.hall}</p>
+              <h3>{show.title}</h3>
+              <p className='muted'>{show.time}</p>
+            </article>
+          ))
+        }
+      </section>
     </div>
     </>
   )
