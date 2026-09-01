@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 import { ChaiMenu } from "./ChaiMenu";
-import { useSpecialChai } from "./hooks/useSpecialChai";
+import { useSpecial } from "./hooks/useSpecial";
 
 function App() {
   const [data, setData] = useState(null);
